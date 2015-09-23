@@ -1,0 +1,155 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* Color Vars */
+
+$light-gray: #ECECEC;
+$peter-river: #3498db;
+
+/* universal */
+
+html,
+body{
+  background-color: $peter-river;
+  height: 100%;
+}
+
+section{
+  overflow: auto;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.center{
+  text-align: center;
+}
+
+.center h1{
+  margin-bottom: 10px;
+}
+
+.navbar-default{
+  background-color: rgba(255, 255, 255, 0.0);
+  border: none;
+
+  transition: 0.3s ease-in-out;
+}
+.opaqueNav{
+  background-color: $peter-river;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px 20px;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav > li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-logo{
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-logo:hover{
+  background: url()
+}
+
+// Parallax
+
+.landing{
+  position: relative;
+  height: 98vh;
+  background-image: image-url("bg1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: top center;
+  background-attachment: fixed;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 1;
+}
+
+h1{
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.greeting{
+  padding-top: 200px;
+}
+
+.greeting > h1{
+  margin-top: 0;
+  text-align: right;
+  font-size: 4em;
+  color: #FFF;
+}
+h2 {
+  font-size: 2.4em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: gray;
+}
+
+h3 {
+  font-size: 1.8em;
+  letter-spacing: -1px;
+  font-weight: normal;
+  color: gray;
+}
+
+h4 {
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  font-weight: normal;
+  color: #DC6891;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+.nav {
+  font-size: 1.6em;
+}
