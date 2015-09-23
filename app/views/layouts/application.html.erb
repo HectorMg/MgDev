@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,600,600italic,700,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class="bg"></div>
@@ -19,11 +20,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= image_tag('logob&w.png', class: 'nav-logo') %>
+          <div id="logo" class="nav-logo"></div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Start', '#' %></li>
+            <li id="blackLinks"><%= link_to 'Start', '#' %></li>
             <li><%= link_to 'About Me', '#' %></li>
             <li><%= link_to 'Projects', '#' %></li>
             <li><%= link_to 'Contact', '#' %></li>
@@ -31,13 +32,6 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <header class="landing">
-      <div class="container">
-        <div class="greeting">
-          <h1 id="greet">Mg Web Development</h1>
-        </div>
-      </div>
-    </header>
     <%= yield %>
 
 </body>

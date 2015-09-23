@@ -6,12 +6,13 @@
 
 $light-gray: #ECECEC;
 $peter-river: #3498db;
+$pomegranate: #c0392b;
 
 /* universal */
 
 html,
 body{
-  background-color: $peter-river;
+  background-color: black;
   height: 100%;
 }
 
@@ -34,12 +35,8 @@ textarea{
 .navbar-default{
   background-color: rgba(255, 255, 255, 0.0);
   border: none;
-
   transition: 0.3s ease-in-out;
-}
-.opaqueNav{
-  background-color: $peter-river;
-  transition: 0.5s ease-in-out;
+  padding-top: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -49,10 +46,28 @@ textarea{
     padding-right: 5px;
     margin: 5px 20px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.opaqueNav{
+  background-color: white;
+  transition: 0.5s ease-in-out;
+  border: none;
+  border-bottom: 1px solid $light-gray;
+  padding-top: 0px;
+}
+
+.opaqueNav .navbar-right> li > a {
+    color: black;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px 20px;
+    font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #000;
+    color: $pomegranate;
     font-weight: bold;
 }
 
@@ -63,7 +78,7 @@ textarea{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: $pomegranate;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -78,25 +93,54 @@ textarea{
 }
 
 .nav-logo{
-  width: 30%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 75px;
+  height: 75px;
+  margin-top: 5px;
+  background-image: image-url('logob&w.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .nav-logo:hover{
-  background: url()
+  width: 75px;
+  height: 75px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  background-image: image-url('logopom.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.nav-logo-black{
+  width: 75px;
+  height: 50px;
+  margin-top: 5px;
+  background-image: image-url('logoblack.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 // Parallax
 
 .landing{
   position: relative;
-  height: 98vh;
+  height: 100vh;
   background-image: image-url("bg1.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: top center;
   background-attachment: fixed;
+}
+
+//About me
+
+.about{
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 1000px;
 }
 
 /* Typography */
@@ -110,6 +154,8 @@ h1{
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 .greeting{
@@ -118,9 +164,18 @@ h1{
 
 .greeting > h1{
   margin-top: 0;
-  text-align: right;
-  font-size: 4em;
+  text-align: left;
+  font-size: 5em;
   color: #FFF;
+  margin-bottom: 10px;
+}
+.greeting > h2{
+  margin-top: 0;
+  text-align: left;
+  font-size: 3.5em;
+  font-style: italic;
+  color: $pomegranate;
+  font-family: 'Open Sans', sans-serif;
 }
 h2 {
   font-size: 2.4em;
@@ -151,5 +206,5 @@ p {
 }
 
 .nav {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
