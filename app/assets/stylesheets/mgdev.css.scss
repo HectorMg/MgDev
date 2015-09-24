@@ -6,7 +6,7 @@
 
 $light-gray: #ECECEC;
 $peter-river: #3498db;
-$pomegranate: #c0392b;
+$royal-blue: #4183D7;
 
 /* universal */
 
@@ -36,7 +36,7 @@ textarea{
   background-color: rgba(255, 255, 255, 0.0);
   border: none;
   transition: 0.3s ease-in-out;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -67,7 +67,7 @@ textarea{
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: $pomegranate;
+    color: $royal-blue;
     font-weight: bold;
 }
 
@@ -78,7 +78,7 @@ textarea{
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: $pomegranate;
+  background-color: $royal-blue;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -94,16 +94,21 @@ textarea{
 
 .nav-logo{
   width: 75px;
-  height: 75px;
+  height: 50px;
   margin-top: 5px;
+  margin-left: 100px;
   background-image: image-url('logob&w.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+#navbar{
+  margin-right: 80px;
+}
+
 .nav-logo:hover{
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 55px;
   margin-top: 5px;
   margin-bottom: 0px;
   background-image: image-url('logopom.png');
@@ -113,7 +118,7 @@ textarea{
 }
 
 .nav-logo-black{
-  width: 75px;
+  width: 65px;
   height: 50px;
   margin-top: 5px;
   background-image: image-url('logoblack.png');
@@ -133,6 +138,55 @@ textarea{
   position: top center;
   background-attachment: fixed;
 }
+
+//Btn Set Main
+
+.greet-btn-set{
+  // background-color: black;
+  width: 40%;
+  height: 40px;
+  margin-left: 135px;
+  margin-top: 20px;
+}
+
+.btn-landing{
+  height: 100%;
+  width: 45%;
+  background-color: rgba(0,0,0, 0.0);
+  border: 1px solid white;
+  color: white;
+  padding: 8px;
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+.btn-landing:hover{
+  height: 100%;
+  width: 48%;
+  background-color: rgba(0,0,0, 0.2);
+  border: 2px solid white;
+  color: white;
+  font-size: 1.1em;
+  padding-top: 8px;
+}
+
+.glyphicon-chevron-right {
+  margin-left: 10px;
+}
+
+.headshot{
+  float: left;
+  display: inline;
+  width: 90%;
+}
+
+.about-me{
+  font-size: 2em;
+  margin-top: 70px;
+  margin-left: 10px;
+  font-family: 'Open Sans', 'sans-serif';
+  width: 90%;
+}
+
 
 //About me
 
@@ -158,25 +212,35 @@ h1{
   font-weight: bold;
 }
 
+.title{
+  font-size: 4em;
+  margin-bottom: 60px;
+}
+
 .greeting{
-  padding-top: 200px;
+  padding-top: 250px;
+  padding-left: 150px;
 }
 
 .greeting > h1{
   margin-top: 0;
   text-align: left;
-  font-size: 5em;
+  font-size: 3.9em;
   color: #FFF;
   margin-bottom: 10px;
+  font-weight: bold;
 }
+
 .greeting > h2{
   margin-top: 0;
+  margin-bottom: 10px;
   text-align: left;
-  font-size: 3.5em;
-  font-style: italic;
-  color: $pomegranate;
+  font-size: 3em;
+  font-style: normal;
+  color: $royal-blue;
   font-family: 'Open Sans', sans-serif;
 }
+
 h2 {
   font-size: 2.4em;
   letter-spacing: -1px;

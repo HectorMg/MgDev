@@ -1,11 +1,37 @@
-<header class="landing">
+<header class="landing" data-scroll-index="0">
   <div class="container">
     <div class="greeting">
       <h1 id="greet">Héctor Morales</h1>
-      <h2 class="">Software Developer</h2>
+      <h2 class="">Software Developer.</h2>
+      <h2 class="">Engineer.</h2>
+      <h2 class="">Person.</h2>
+    </div>
+    <div class="container">
+      <div class="greet-btn-set">
+        <a class="btn btn-landing">ABOUT<span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a class="btn btn-landing">CONTACT<span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
     </div>
   </div>
 </header>
-<div class="about">
-  <div class="container">Hola</div>
+<div class="about" data-scroll-index="1">
+  <div class="container">
+    <h1 class="title">Who is Hector Morales?</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <%= image_tag('headshot.png', class: 'img-circle headshot') %>
+        </div>
+        <div class="col-sm-7">
+          <p class="about-me">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+            ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem
+            non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat
+            condimentum. Aliquam erat volutpat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
