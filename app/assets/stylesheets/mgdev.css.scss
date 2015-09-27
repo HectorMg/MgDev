@@ -210,12 +210,21 @@ textarea{
   padding-top: 20px;
 }
 
-.about-education{
+.about-edu-work{
+  text-align: center;
+
+}
+
+.edu{
   background-color: $royal-blue;
   padding-top: 40px;
   padding-bottom: 40px;
-  text-align: center;
+}
 
+.work{
+background-color: #95a5a6;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
 .title-white{
@@ -232,14 +241,27 @@ textarea{
   text-align: left;
 }
 
+.work-featurette{
+  background-color: white;
+  border-radius: 5px;
+  border: 5px solid $royal-blue;
+  width: 100%;
+  text-align: left;
+}
+
 .contain-featurette{
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
-.featurette-header{
+.edu-featurette-header{
   background-color: #95a5a6;
+  width: 100%;
+}
+
+.work-featurette-header{
+  background-color: $royal-blue;
   width: 100%;
 }
 
@@ -339,7 +361,22 @@ p {
   margin-top: 10px;
 }
 
-.featurette-header > h1{
+.contain-featurette > a{
+  font-size: 1.1em;
+  text-align: left;
+  margin-bottom: 0;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.edu-featurette-header > h1{
+  color: white;
+  font-size: 1.9em;
+  padding: 5px;
+  margin-top: 0;
+}
+
+.work-featurette-header > h1{
   color: white;
   font-size: 1.9em;
   padding: 5px;
