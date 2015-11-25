@@ -7,43 +7,6 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,600,600italic,700,400italic' rel='stylesheet' type='text/css'>
   <%= favicon_link_tag 'favicon.ico' %>
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        //Campus Mty
-        var cmty = {lat: 25.650593, lng: -100.291188 }
-        25.661941, -100.430199
-        var map = new google.maps.Map(document.getElementById('map-campus-mty'), {
-          zoom: 15,
-          center: cmty
-        });
-        var marker = new google.maps.Marker({
-          position: cmty,
-          map: map,
-          title: 'ITESM Campus Monterrey'
-        });
-
-        //CSC
-        var csc = {lat: 25.661941, lng:-100.430199}
-        var map = new google.maps.Map(document.getElementById('map-csc'), {
-          zoom: 15,
-          center: csc
-        });
-        var marker = new google.maps.Marker({
-          position: csc,
-          map: map,
-          title: 'Prepa Tec CSC'
-        });
-
-      }
-      google.maps.event.addDomListenerOnce(window, 'load', initialize);
-      ready = function() {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +'libraries=places&'+'callback=initialize';
-        document.body.appendChild(script);
-       };
-    </script>
 </head>
 <body>
   <div class="bg"></div>
