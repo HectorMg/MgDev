@@ -16,7 +16,7 @@
 </header>
 <div class="about" data-scroll-index="1">
   <div class="container">
-    <h1 class="title">Who is Hector Morales?</h1>
+    <h1 class="title">ABOUT ME</h1>
     <div class="container">
       <div class="row">
           <%= image_tag('headshot.png', class: 'img-circle headshot') %>
@@ -30,13 +30,10 @@
     </div>
   </div>
 </div>
-<div class="about-edu-work">
-  <div class="row">
-    <div class="row edu-featurette">
-      <%= render 'main_page/about_education' %>
-    </div>
-    <div class="row">
-      <%= render 'main_page/about_work' %>
-    </div>
-  </div>
+<div class="row education" data-scroll-index="2">
+  <%= render 'main_page/about_education' %>
+</div>
+<div class="row experience" data-scroll-index="3">
+  <%= render 'main_page/about_work' %>
+</div>
 </div>

@@ -7,6 +7,8 @@
 $light-gray: #ECECEC;
 $peter-river: #3498db;
 $royal-blue: #4183D7;
+$jordy-blue: #89C4F4;
+$white-smoke: #ECECEC;
 
 /* universal */
 
@@ -46,7 +48,7 @@ textarea{
     padding-right: 5px;
     margin: 5px 20px;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .opaqueNav{
@@ -199,7 +201,7 @@ textarea{
   text-align: center;
 }
 
-//About -Edu
+//Education
 
 .logo-tec{
   width: 100%;
@@ -210,34 +212,39 @@ textarea{
   padding-top: 20px;
 }
 
-.about-edu-work{
+.education{
+  margin-left: 0;
+  margin-right: 0;
+  background-color: $white-smoke;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
-
 }
 
-.edu{
-  background-color: $royal-blue;
+.experience{
+  margin-left: 0;
+  margin-right: 0;
+  background-color: white;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.work{
-background-color: #95a5a6;
-padding-top: 40px;
-padding-bottom: 40px;
-}
-
 .title-white{
+  font-family: 'Montserrat';
   color: white;
   font-size: 4em;
   margin-bottom: 40px;
 }
 
 .edu-featurette{
-  background-color: #ecf0f1;
-  border-radius: 5px;
-  border: 5px solid #95a5a6;
   width: 100%;
+  text-align: left;
+}
+
+.edu-featurette-header{
+  color: black;
+  font-family: 'Montserrat';
+  font-weight: bold;
   text-align: left;
 }
 
@@ -255,9 +262,8 @@ padding-bottom: 40px;
   padding-bottom: 20px;
 }
 
-.edu-featurette-header{
-  background-color: #95a5a6;
-  width: 100%;
+.contain-featurette h1{
+
 }
 
 .work-featurette-header{
@@ -286,8 +292,10 @@ h1{
 }
 
 .title{
+  font-family: 'Montserrat';
   font-size: 4em;
   margin-bottom: 40px;
+  color: black;
 }
 
 .greeting{
@@ -302,6 +310,7 @@ h1{
   color: #FFF;
   margin-bottom: 10px;
   font-weight: bold;
+  font-family: 'Montserrat';
 }
 
 .greeting > h2{
@@ -338,6 +347,7 @@ h4 {
 }
 
 p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   line-height: 1.7em;
 }
@@ -353,7 +363,7 @@ p {
 }
 
 .contain-featurette > p{
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: black;
   text-align: left;
   margin-bottom: 0;
