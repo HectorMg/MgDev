@@ -12,6 +12,7 @@ $white-smoke: #ECECEC;
 $emerald: #2ecc71;
 $amethyst: #9b59b6;
 $carrot: #e67e22;
+$pomegranate: #c0392b;
 
 /* universal */
 
@@ -258,14 +259,23 @@ textarea{
 .edu-featurette{
   width: 100%;
   text-align: left;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .edu-featurette-header{
-  color: black;
+  color: white;
   font-family: 'Montserrat';
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  border-radius: 3px;
+}
+#highschool{
+  background-color: $pomegranate;
+}
+#university{
+  background-color: $peter-river;
 }
 
 .work-featurette{
@@ -416,7 +426,7 @@ p {
 }
 
 .edu-text{
-  margin-top: 60px;
+  margin-top: 20px;
   h2{
     text-align: left;
     color: black;
@@ -493,4 +503,34 @@ p {
 }
 #editors{
   background-color: $amethyst;
+}
+
+//Contact
+
+.contact{
+  margin-left: 0;
+  margin-right: 0;
+  background-color: $peter-river;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.contact-set{
+}
+
+.contact-icon{
+  width: 20%;
+}
+
+.contact-text{
+  p{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  a{
+    color:white;
+  }
 }
