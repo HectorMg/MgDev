@@ -9,6 +9,9 @@ $peter-river: #3498db;
 $royal-blue: #4183D7;
 $jordy-blue: #89C4F4;
 $white-smoke: #ECECEC;
+$emerald: #2ecc71;
+$amethyst: #9b59b6;
+$carrot: #e67e22;
 
 /* universal */
 
@@ -279,6 +282,7 @@ textarea{
 .work-featurette-header{
   background-color: $royal-blue;
   width: 100%;
+  margin-top: 50px;
 }
 
 .logo-tec{
@@ -413,6 +417,13 @@ p {
 
 .edu-text{
   margin-top: 60px;
+  h2{
+    text-align: left;
+    color: black;
+  }
+  li{
+    font-size: 1.2em;
+  }
 }
 
 .sub-exp-title{
@@ -460,13 +471,26 @@ p {
   color: white;
 }
 
-.ul-title{
-  font-size: 2em;
-  font-family: 'Montserrat';
-  color: black;
-  text-align: left;
+.skill-col{
+  li{
+    font-size: 1.5em;
+  }
+  h2{
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
 }
 
-.apprenticeship{
-  text-align: center;
+#languages{
+  background-color: $carrot;
+}
+#frameworks{
+  background-color: $emerald;
+}
+#editors{
+  background-color: $amethyst;
 }
