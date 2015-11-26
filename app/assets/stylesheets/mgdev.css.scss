@@ -239,6 +239,7 @@ textarea{
 .edu-featurette{
   width: 100%;
   text-align: left;
+  margin-bottom: 80px;
 }
 
 .edu-featurette-header{
@@ -356,6 +357,10 @@ p {
   font-size: 1.2em;
 }
 
+.edu-container{
+  margin-bottom: 60px;
+}
+
 .contain-featurette > h1{
   font-size: 1.3em;
   margin-bottom: 5px;
@@ -363,7 +368,7 @@ p {
 }
 
 .contain-featurette > p{
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: black;
   text-align: left;
   margin-bottom: 0;
@@ -391,4 +396,23 @@ p {
   font-size: 1.9em;
   padding: 5px;
   margin-top: 0;
+}
+
+.edu-img{
+  width: 100%;
+}
+
+.edu-text{
+  margin-top: 60px;
+}
+
+//Icons
+
+.icon-row{
+  text-align: right;
+  margin-top: 50px;
+}
+
+.soc-med-icon{
+  width: 5%;
 }
