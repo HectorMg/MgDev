@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,600,600italic,700,400italic' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
@@ -29,9 +30,9 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="" data-scroll-nav="0">Start</a></li>
             <li><a href="" data-scroll-nav="1">About Me</a></li>
-            <!-- <li><a href="" data-scroll-nav="2">Education</a></li> -->
             <li><a href="" data-scroll-nav="3">Experience</a></li>
-            <li><li><a href="" data-scroll-nav="4">Contact</a></li></li>
+            <li><a href="" data-scroll-nav="4">Contact</a></li>
+            <li><%= link_to "Blog", "http://hectormg.github.io", :target => "_blank" %></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
